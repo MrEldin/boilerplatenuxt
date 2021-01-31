@@ -1,0 +1,33 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body {
+  @apply bg-gray-200;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-header;
+}
+
+a {
+  @apply text-blue-500;
+}
+
+p {
+  @apply text-gray-600 mb-6 leading-relaxed;
+}
+
+pre {
+  @apply break-all whitespace-pre-wrap;
+}
+
+.container {
+  @apply w-10/12 mx-auto;
+}
+
+@import "./vendor/hljs";
+
+.CodeMirror {
+  @apply font-sans text-base w-full max-w-full border-dashed border-2 border-gray-400 rounded-lg pl-5 mb-6;
+}
